@@ -1,9 +1,13 @@
 import React from "react";
+import Products from "../components/ProductsPage/Products";
+import Hero from "../components/Hero";
+import coffee4 from "../images/coffee4.jpg";
 
 export default function ProductsPage() {
   return (
     <>
-      <h1>Hello From Products Page</h1>
+      <Hero img={coffee4} />
+      <Products />
     </>
   );
 }

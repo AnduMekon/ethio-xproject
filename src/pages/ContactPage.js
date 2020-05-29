@@ -1,9 +1,12 @@
 import React from "react";
-
+import Hero from "../components/Hero";
+import coffeetree1 from "../images/coffeetree1.jpg";
+import Contact from "../components/ContactPage/Contact";
 export default function ContactPage() {
   return (
     <>
-      <h1>Hello From Contact Page</h1>
+      <Hero img={coffeetree1} />
+      <Contact />
     </>
   );
 }

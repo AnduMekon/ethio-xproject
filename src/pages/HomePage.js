@@ -1,9 +1,18 @@
 import React from "react";
-
+import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
+import Services from "../components/HomePage/Services";
+import Featured from "../components/HomePage/Featured";
 export default function HomePage() {
   return (
     <>
-      <h1>Hello From Home Page</h1>
+      <Hero title="awesome Ethiopian Coffee" max="true">
+        <Link to="/products" className="main-link" style={{ margin: "2rem" }}>
+          our products
+        </Link>
+      </Hero>
+      <Services />
+      <Featured />
     </>
   );
 }
