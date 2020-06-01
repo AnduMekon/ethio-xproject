@@ -12,7 +12,7 @@ export default function Navbar() {
           <NavWrapper>
             <div className="nav-center">
               <FaBars className="nav-icon" onClick={handleSidebar} />
-              <h1 className="coffee">Family Coffee</h1>
+              <img src={logo} alt="tech store logo" />
               <div className="nav-cart">
                 <FaCartPlus className="nav-icon" onClick={handleCart} />
                 <div className="cart-items">{cartItems}</div>
@@ -47,12 +47,6 @@ const NavWrapper = styled.nav`
   }
   .nav-cart {
     position: relative;
-  }
-  .coffee {
-    font-weight: bold;
-    color: var( --primaryColor);
-    font-style: oblique;
-    
   }
   .cart-items {
     background: var(--primaryColor);
